@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    font-family: Verdana;
+    font-size: 2em;
+    background-color: rgb(41, 41, 41);
+    color: aliceblue;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    padding: 10px, 20px;
+    width:2em;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(105, 173, 250);
+    cursor: pointer;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons:hover{
+    background-color: blue;    
+    transition: background-color 1s;
+}
