@@ -1,0 +1,61 @@
+body{
+    background-color: azure;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+div{
+    font-size: 3em;
+}
+
+form{
+    text-align: center;
+    
+}
+
+#inputTask{
+    margin-top: 100px;
+    margin-bottom: 15px;
+    height: 30px;
+    min-width: 250px;
+
+}
+
+form button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em; 
+    padding: 10px 15px;   
+}
+
+#addTask{
+    border-radius: 5px 5px;
+    background-color: rgb(40, 255, 40);
+    transition: background-color 1s ease;
+    cursor: pointer;
+
+}
+
+#addTask:hover {
+    background-color: rgb(17, 114, 17);
+}
+
+#removeTask{
+    border-radius: 5px 5px;
+    background-color: rgb(255, 34, 34);
+    transition: background-color 1s ease;
+    cursor: pointer;
+}
+
+#removeTask:hover{
+    background-color: rgb(102, 14, 14);
+}
+
+p{
+    font-size: 2em;
+    text-align: center;
+}

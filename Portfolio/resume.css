@@ -1,13 +1,55 @@
 body{
-    background-color: grey;
+    background-color: rgba(95, 94, 92, 0.76);
     scroll-behavior: smooth;
 }
 
 h1{
     text-align: center;
-    font-family: Georgia;
-    text-shadow: 2px 2px #959650;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px #ffffff;
     font-weight: bold;
     font-size: 4em;
+}
+
+#navBar{
+    background-color: hsla(0, 2%, 18%, 0.623);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 25%;
+}
+
+#navBar button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: hsla(0, 0%, 37%, 0.459);
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px black solid;
+    cursor: pointer;
+    color: rgb(76, 109, 197);
+    transition: background-color 0.75s ease;
+    transition: color 0.75s ease;
+}
+
+div{
+
+}
+
+#description{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25em;
+    
+}
+
+#myAbout:hover{
+    background-color: hsla(0, 0%, 0%, 0.671);
+    color: rgb(255, 255, 255);
+}
+
+#myProjects:hover{
+    background-color: hsla(0, 0%, 0%, 0.671);
+    color: rgb(255, 255, 255);
 }
 
