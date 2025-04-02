@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(95, 94, 92, 0.76);
+    background-color: rgba(13, 37, 72, 0.76);
     scroll-behavior: smooth;
 }
 
@@ -28,7 +28,7 @@ h1{
     width: 100%;
     border: 1px black solid;
     cursor: pointer;
-    color: rgb(76, 109, 197);
+    color: hsl(224, 87%, 42%);
     transition: background-color 0.75s ease;
     transition: color 0.75s ease;
 }

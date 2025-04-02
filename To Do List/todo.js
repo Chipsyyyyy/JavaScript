@@ -1,17 +1,19 @@
+const userInput = document.getElementById("inputTasks").value;
+const result = document.getElementById("resultText");
+
 function addTask(){
     // Check whether the user has inputted a string
-    const userInput = document.getElementById("inputTasks").value;
-    const result = document.getElementById("resultText");
+    
     // If not, send a window.error message
     
     if(typeof(userInput) !== "string"){
-        window.Error("Please input a String");
+        window.alert("Please input a String");
     }
     
     //If there is no user input && they have a task checked also send a window.error message
     
     else if(typeof(userInput) === null && ){
-
+        window.alert("You cannot add a task that is already there!");
     }
     
     // If it is, Add a new checkbox
@@ -20,7 +22,7 @@ function addTask(){
     else{
         document.createElement();
         document.createElement();
-        result.textContent("Task Successfully Added")
+        result.textContent = "Task Successfully Added";
     }
 
    
@@ -38,7 +40,10 @@ function removeTask(){
     }
 
     // Remove the task from the page
-    
+    else{
+
+        result.textContent = "Task successfully removed";
+    }
     // If a task is not checked && there is user input, send a window.error message
 }
 
