@@ -1,7 +1,6 @@
 function addTask(){
     // Check whether the user has inputted a string
     const userInput = document.getElementById("inputTasks").value;
-    const result = document.getElementById("resultText");
     // If not, send a window.error message
     
     if(typeof(userInput) !== "string"){
@@ -40,5 +39,10 @@ function removeTask(){
     // Remove the task from the page
     
     // If a task is not checked && there is user input, send a window.error message
+}
+
+function clearAll(){
+    // Get the list of tasks and clear it
+    // document.getElementsByClassName()
 }
 

@@ -15,12 +15,10 @@
     </div>
 
     <form>
-        <input type="text" id="inputTask"><br>
-        <button id="addTask" onclick="addTask()">Add Task</button>
-        <button id="removeTask" onclick="removeTask()">Remove Task</button>
+        <input type="text" id="inputTask">
+        <button id="addTask" onclick="addTask()" class="buttons">Add Task</button>
+        <button id="removeAll" onclick="clearAll()" class="buttons">Clear All Tasks</button>
     </form>
-
-    <p id="resultText">Task Added</p>
     
     <script src="todo.js"></script>
 </body>
