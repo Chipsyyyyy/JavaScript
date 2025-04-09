@@ -1,49 +1,26 @@
-const userInput = document.getElementById("inputTasks").value;
-const result = document.getElementById("resultText");
+var taskInput = document.getElementById("inputTask");
+var taskContainter = document.getElementById("currentTasks-container")
+
+function createNewTask(taskName){ // Takes in the task name for the new task
+    var newItem = document.createElement("li");
+    var label = document.createElement("label");
+    var checkbox = document.createElement("input")
+    //Creates the new elements for the task item
+
+    label.innerText = taskName;
+    checkbox.type = "checkbox";
+    //Style the task
+
+    newItem.append(label);
+    newItem.append(checkbox);
+    //append the elements to the new item
+
+    return newItem;
+}
 
 function addTask(){
-    // Check whether the user has inputted a string
-    
-    // If not, send a window.error message
-    
-    if(typeof(userInput) !== "string"){
-        window.alert("Please input a String");
+    var listItem = createNewTask(taskInput.value);
+    taskContainter.appendChild(listItem);
+    taskInput.value = "";
     }
-    
-    //If there is no user input && they have a task checked also send a window.error message
-    
-    else if(typeof(userInput) === null && ){
-        window.alert("You cannot add a task that is already there!");
-    }
-    
-    // If it is, Add a new checkbox
-    // Add a label for the new checkbox
-    
-    else{
-        document.createElement();
-        document.createElement();
-        result.textContent = "Task Successfully Added";
-    }
-
-   
-}
-
-function removeTask(){
-    // Check whether a checkbox is selected && if there are any checkboxes at all
-    // If not, send a window.error message
-
-    if(){
-        window.Error("Please select a task you want to remove");
-    }
-    else if (){
-        window.Error("You have to add tasks before you can remove them");
-    }
-
-    // Remove the task from the page
-    else{
-
-        result.textContent = "Task successfully removed";
-    }
-    // If a task is not checked && there is user input, send a window.error message
-}
 

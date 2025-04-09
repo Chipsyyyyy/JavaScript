@@ -1,5 +1,5 @@
 body{
-    background-color: azure;
+    background-color: hsl(0, 0%, 35%);
 }
 
 h1{
@@ -9,53 +9,36 @@ h1{
     font-size: 3em;
 }
 
-div{
-    font-size: 3em;
-}
-
-form{
-    text-align: center;
-    
+#input{
+    text-align: center;  
 }
 
 #inputTask{
-    margin-top: 100px;
+    margin-top: 15px;
     margin-bottom: 15px;
     height: 30px;
     min-width: 250px;
 
 }
 
-form button{
+div{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+div button{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5em; 
-    padding: 10px 15px;   
+    color: hsl(0, 0%, 0%);
+    border: none;
+    background: none;
+    transition: color 1s ease;
+    cursor: pointer;  
 }
 
-#addTask{
-    border-radius: 5px 5px;
-    background-color: rgb(40, 255, 40);
-    transition: background-color 1s ease;
-    cursor: pointer;
-
-}
-
-#addTask:hover {
-    background-color: rgb(17, 114, 17);
-}
-
-#removeTask{
-    border-radius: 5px 5px;
-    background-color: rgb(255, 34, 34);
-    transition: background-color 1s ease;
-    cursor: pointer;
-}
-
-#removeTask:hover{
-    background-color: rgb(102, 14, 14);
-}
-
-p{
-    font-size: 2em;
-    text-align: center;
+div button:hover {
+    color: white;
 }

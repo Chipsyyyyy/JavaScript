@@ -10,17 +10,15 @@
     
     <h1>To Do List</h1>
 
-    <div id="currentTasks-container">
+    <ul id="currentTasks-container">
         
+    </ul>
+
+    <div id="input">
+        <input type="text" id="inputTask">
+        <button id="addTask" onclick="addTask()">Add Task</button>
+        <button id="removeTask" onclick="removeTask()">Remove Task/s</button>
     </div>
-
-    <form>
-        <input type="text" id="inputTask"><br>
-        <button id="addTask" onclick="addTask()">Add</button>
-        <button id="removeTask" onclick="removeTask()">Remove</button>
-    </form>
-
-    <p id="resultText">Task Added</p>
     
     <script src="todo.js"></script>
 </body>
