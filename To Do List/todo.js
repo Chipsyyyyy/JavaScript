@@ -4,7 +4,7 @@ var taskContainter = document.getElementById("currentTasks-container")
 function createNewTask(taskName){ // Takes in the task name for the new task
     var newItem = document.createElement("li");
     var label = document.createElement("label");
-    var checkbox = document.createElement("input")
+    var checkbox = document.createElement("input");
     //Creates the new elements for the task item
 
     label.innerText = taskName;
@@ -22,5 +22,14 @@ function addTask(){
     var listItem = createNewTask(taskInput.value);
     taskContainter.appendChild(listItem);
     taskInput.value = "";
-    }
+}
+
+function removeTask(){
+    var currentTasks = taskContainter.querySelectorAll("li");
+    currentTasks.forEach(currentTask => {
+        if(currentTask.checked = true){
+            taskContainter.remove(currentTask);
+        }
+    })
+}
 
