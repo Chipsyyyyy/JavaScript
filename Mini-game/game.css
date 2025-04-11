@@ -1,0 +1,70 @@
+body{
+    background-color: grey;
+}
+
+#gameContainer{
+    text-align: center;
+}
+
+#rollDiceBtn{
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 2.5rem;
+    background-color: hsl(120, 100%, 60%);
+    color: white;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+#rollDiceBtn:hover{
+    background-color: hsl(120, 50%, 25%);
+    transition: background-color ease-in 0.5s;
+}
+
+#rollDiceBtn:not(:hover) {
+    transition: background-color ease-out 0.5s;
+}
+
+#rolling{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+#shop{
+    visibility: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+#buyBtn{
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 2.5rem;
+    background-color: hsl(120, 100%, 60%);
+    color: white;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+#exitBtn{
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 2.5rem;
+    background-color: hsl(0, 100%, 60%);
+    color: white;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
