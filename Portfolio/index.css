@@ -1,0 +1,95 @@
+
+      /* Typography styles */
+h1 {
+    font-size: 4rem; /* Large heading size */
+  }
+  p {
+    font-size: 1.5rem; /* Paragraph text size */
+  }
+  
+  /* Base body styles */
+  body {
+    margin: 0; /* Remove default margin */
+    font-family: 'Prompt', sans-serif; /* Custom font */
+    color: white; /* White text color */
+    background: #202731; /* Dark background */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Section styling */
+  section {
+    position: relative; /* For absolute positioning of children */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    min-height: 400px; /* Minimum section height */
+    padding-top: 100px; /* Top padding */
+  }
+  
+  /* Background color classes */
+  .blue {
+    background: #3c31dd; /* Blue section */
+  }
+  .red {
+    background: #dd3f31; /* Red section */
+  }
+  .pink {
+    background: #ff0066; /* Pink section */
+    overflow: hidden; /* Hide overflow */
+  }
+  .dark {
+    background: #0f0f10; /* Dark section */
+  }
+  
+  /* Wave divider styling */
+  .wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .wave svg {
+    position: relative;
+    display: block;
+    width: calc(103% + 1.3px); /* Slightly wider to prevent gaps */
+    height: 262px; /* Fixed height */
+  }
+  .wave .shape-fill {
+    fill: hsl(240, 3%, 6%); /* Dark fill color for wave */
+  }
+  
+  /* Spacer styling with SVG backgrounds */
+  .spacer {
+    aspect-ratio: 960/300; /* Maintain aspect ratio */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .layer1 {
+    background-image: url('./layer1.svg'); /* First layer SVG */
+  }
+  .layer2 {
+    background-image: url('./layer2.svg'); /* Second layer SVG */
+  }
+  .flip {
+    transform: rotate(180deg); /* Flip spacer upside down */
+  }
+  
+  /* Blob animation styling */
+  .blob-motion {
+    position: absolute;
+    transform: translateY(-20%); /* Position adjustment */
+    z-index: 0; /* Behind content */
+  }
+  .blob-content {
+    z-index: 1; /* Above blob animation */
+  }
+  
+  /* Blobs section background */
+  .blobs {
+    width: 100%;
+    background: url('./blobs.svg') no-repeat bottom / cover; /* Blobs SVG background */
+  }

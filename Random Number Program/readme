@@ -1,0 +1,24 @@
+1. blobs.svg - Contains three blob shapes used as a background in the contact section
+
+2. layer1.svg - A multi-layered wave pattern used as a spacer between sections
+
+3. layer2.svg - Another multi-layered wave pattern with different colors, used as a spacer
+
+Key Features:
+1. Responsive Design: Uses viewBox in SVGs and percentage-based widths for responsiveness
+
+2. Modern Layout: Flexbox for section layouts with centered content
+
+3. Visual Interest:
+
+    - Animated blobs in the pink section
+
+    - Wave dividers between sections
+
+    - SVG background spacers
+
+4. Performance: SVG graphics are lightweight and scale perfectly
+
+5. Typography: Uses Google's Prompt font with multiple weights
+
+The code creates an engaging portfolio site with dynamic visual elements while maintaining clean, semantic HTML structure.
